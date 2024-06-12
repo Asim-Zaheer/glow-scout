@@ -1,0 +1,21 @@
+/* src/styles/globals.css */
+.swiper-button-prev, .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  
+  .swiper-button-prev {
+    left: 10px;
+  }
+  
+  .swiper-button-next {
+    right: 10px;
+  }
+  
+  .swiper-button-prev:after, .swiper-button-next:after {
+    font-size: 20px;
+    color: #4A154B; /* Match the button color to your theme */
+  }
+  
