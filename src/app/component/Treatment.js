@@ -23,7 +23,7 @@ const treatments = [
 ];
 
 const TreatmentCard = styled(Card)(({ theme }) => ({
-  maxWidth: 345,
+  maxWidth: 350,
   margin: theme.spacing(2),
   borderRadius: '16px',
   boxShadow: 'none',
@@ -63,13 +63,13 @@ const Treatment = () => {
           breakpoints={{
             640: { slidesPerView: 1, spaceBetween: 20 },
             768: { slidesPerView: 2, spaceBetween: 40 },
-            1024: { slidesPerView: 3, spaceBetween: 30 },
+            1024: { slidesPerView: 5, spaceBetween: 30 },
           }}
         >
           {treatments.map((treatment, index) => (
             <SwiperSlide key={index}>
               <TreatmentCard>
-                <TreatmentImage sx={{height:"300px" , maxWidth:"500px"}} image={treatment.image} title={treatment.title} />
+                <TreatmentImage sx={{height:"350px" , width:"220px"}} image={treatment.image} title={treatment.title} />
                 <CardContent>
                   <TreatmentTitle variant="h6">{treatment.title}</TreatmentTitle>
                   <TreatmentSubtitle variant="body2">{treatment.subtitle}</TreatmentSubtitle>
