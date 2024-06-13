@@ -1,6 +1,5 @@
 'use client'
-// src/components/Main.js
-// src/components/Main.js
+
 import React from 'react';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
@@ -16,7 +15,7 @@ const Image = styled('img')({
 });
 
 const StyledTextField = styled(TextField)({
-    backgroundColor: '#F6E9CE99', // Set according to your design
+    backgroundColor: '#F6E9CE99',
     borderRadius: '30px',
     '& .MuiOutlinedInput-root': {
       '& fieldset': {
@@ -38,7 +37,7 @@ const StyledTextField = styled(TextField)({
     height: '56px',
     padding: '0 30px',
     '&:hover': {
-      backgroundColor: '#3b0d3b', // Darken on hover
+      backgroundColor: '#3b0d3b', 
     },
   });
 

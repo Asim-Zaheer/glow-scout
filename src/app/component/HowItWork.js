@@ -1,5 +1,4 @@
 'use client'
-// src/components/HowItWorks.js
 import React from 'react';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
@@ -15,7 +14,7 @@ const steps = [
 ];
 
 const StepBox = styled(Box)(({ theme }) => ({
-  backgroundColor: '#F3EDE8', // Background color from the design
+  backgroundColor: '#F3EDE8', 
   borderRadius: '16px',
   padding: theme.spacing(4),
   textAlign: 'center',
