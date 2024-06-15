@@ -45,7 +45,7 @@ const Main = () => {
   return (
     <Box sx={{backgroundColor:"white", padding: 4 }}>
       <Grid container spacing={2} alignItems="center">
-        <Grid item xs={12} md={6} sx={{color:"#351120",fontFamily:"Valky"}} >
+        <Grid item xs={12} md={6} sx={{color:"#351120",fontFamily:"clash display"}} >
           <Typography   variant="h3" component="h1" gutterBottom>
             REVEAL YOUR BEAUTY WITH
           </Typography>
@@ -55,7 +55,7 @@ const Main = () => {
           <Typography variant="body1" paragraph>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut nibh faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut nibh faucibus.
           </Typography>
-          <Button variant="contained"sx={{borderRadius:"100px",bgcolor:"#351120",marginBottom:2}}>
+          <Button endIcon={<Image src="/assets/sign.png" alt="Sign Icon" width={24} height={24} />} variant="contained"sx={{borderRadius:"100px",bgcolor:"#351120",marginBottom:2}}>
             Sign Up
           </Button>
         </Grid>

@@ -33,7 +33,7 @@ const Footer = () => {
     <FooterContainer>
       <Grid container spacing={4}>
         <Grid item xs={12} md={3}>
-          <Typography variant="h4" component="div" style={{ fontFamily: 'serif', fontWeight: 'bold' }}>
+          <Typography variant="h4" component="div" style={{ fontFamily: 'Raleway', fontWeight: 'bold' }}>
             Glow Scout
           </Typography>
         </Grid>

@@ -1,9 +1,10 @@
-import Header from '../app/component/Header';
+import Header from './component/Header';
 import Main from '../app/component/Main';
 import HowItWork from './component/HowItWork';
 import Treatment from './component/Treatment';
 import About from './component/About';
 import BusinessSignup from './component/BusinessSignup';
+// import Testimonials from './component/Testimonials';
 import Footer from './component/Footer';
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Treatment/>
       <About/>
       <BusinessSignup/>
+      {/* <Testimonials/> */}
       <Footer/>
     </div>
   );
