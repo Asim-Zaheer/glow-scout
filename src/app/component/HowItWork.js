@@ -5,13 +5,8 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import { styled } from '@mui/system';
+import { steps } from '../utils/utils';
 
-const steps = [
-  { number: '01', description: 'Sign Up' },
-  { number: '02', description: 'Select your Beauty Goals' },
-  { number: '03', description: 'Select Treatment' },
-  { number: '04', description: 'Select Spa' },
-];
 
 const StepBox = styled(Box)(({ theme }) => ({
   backgroundColor: '#F3EDE8', 

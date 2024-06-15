@@ -7,23 +7,13 @@ import { Box, Typography, Card, CardContent, CardMedia, styled,IconButton } from
 // import NavigateBeforeIcon from "../../../public/assets/ButtonLeft.png";
 // import NavigateNextIcon from "../../../public/assets/ButtonRight.png";
 import "../style/treatment.css"
-
+import { treatments } from '../utils/utils';
 SwiperCore.use([Navigation, Pagination]);
 
-const treatments = [
-  { title: 'Laser Resurfacing', subtitle: 'Lorem Ipsum', image: '/assets/women2.png' },
-  { title: 'Chemical Peels', subtitle: 'Lorem Ipsum', image: '/assets/women2.png' },
-  { title: 'Acne Bluelight Therapy', subtitle: 'Lorem Ipsum', image: '/assets/women2.png' },
-  { title: 'Thermage', subtitle: 'Lorem Ipsum', image: '/assets/women2.png' },
-  { title: 'Botox', subtitle: 'Lorem Ipsum', image: '/assets/women2.png' },
-  { title: 'Botox', subtitle: 'Lorem Ipsum', image: '/assets/women2.png' },
-  { title: 'Botox', subtitle: 'Lorem Ipsum', image: '/assets/women2.png' },
-  { title: 'Botox', subtitle: 'Lorem Ipsum', image: '/assets/women2.png' },
 
-];
 
 const TreatmentCard = styled(Card)(({ theme }) => ({
-  maxWidth: 350,
+  // maxWidth: 350,
   margin: theme.spacing(2),
   borderRadius: '16px',
   boxShadow: 'none',
@@ -54,7 +44,7 @@ const Treatment = () => {
       </Typography>
       <Swiper
           spaceBetween={10}
-          slidesPerView={5}
+          // slidesPerView={4}
           navigation={{
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -63,13 +53,13 @@ const Treatment = () => {
           breakpoints={{
             640: { slidesPerView: 1, spaceBetween: 20 },
             768: { slidesPerView: 2, spaceBetween: 40 },
-            1024: { slidesPerView: 5, spaceBetween: 30 },
+            1024: { slidesPerView: 4, spaceBetween: 30 },
           }}
         >
           {treatments.map((treatment, index) => (
             <SwiperSlide key={index}>
               <TreatmentCard>
-                <TreatmentImage sx={{height:"350px" , width:"220px"}} image={treatment.image} title={treatment.title} />
+                <TreatmentImage sx={{height:"350px"}} image={treatment.image} title={treatment.title} />
                 <CardContent>
                   <TreatmentTitle variant="h6">{treatment.title}</TreatmentTitle>
                   <TreatmentSubtitle variant="body2">{treatment.subtitle}</TreatmentSubtitle>
